@@ -82,7 +82,7 @@ container.append("g")
     .call(yAxis);
 
 container.append("g")
-	.attr("class", "axis year")
+	.attr("class", "year")
     .attr("transform", "translate("+margin.left/2+",0)")
     .call(yearAxis);
 

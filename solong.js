@@ -8,7 +8,7 @@ d3.csv("solong.csv",function(csv) {
 //variables
 
 var h = 23660,
-	w = 750,
+	w = 900,
 	margin = {left:200,top:50,bottom:50,interval:80};
 
 //data wrangling
@@ -146,26 +146,6 @@ container.append("g")
 	.attr("style","font: 20px sans-serif;")
     .attr("transform", "translate("+margin.left/1.5+",0)")
     .call(yAxis);
-
-/*container.append("g")
-	.attr("class", "year")
-    .attr("transform", "translate("+margin.left/3+",0)")
-    .call(yearAxis);*/
-
-
-$(document).ready(function() { 
-	console.log("ready");
-    var anchorurl = window.location.hash.replace('#', '');
-    var elem = $('#' + anchorurl);
-
-    console.log(anchorurl);
-
-    if(anchorurl != "") {
-    	console.log("exist");
-         $("body").scrollTo(elem);
-    }
-});
-
 
 })
 
